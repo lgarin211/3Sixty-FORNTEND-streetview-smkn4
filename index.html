@@ -359,6 +359,12 @@
 						s.addEventListener('click', function(e){
 						});
 
+var infospots0 = new PANOLENS.Infospot( 512, hotspotIcons[6].data, true );
+							infospots0.position.set( 3113.18, -1594.66, 3566.01 );
+							s.add(infospots0);
+infospots0.addEventListener('click', function(){
+viewer.setPanorama( rkp );
+});
 viewer.add( s );
 var rute = new PANOLENS.ImagePanorama( "panoramas/rute.jpg" );
 						rute.addEventListener('progress', function(e){
@@ -412,6 +418,12 @@
 infospotrute6.addEventListener('click', function(){
 viewer.setPanorama( wtkr );
 });
+var infospotrute7 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotrute7.position.set( -3227.35, -729.25, -3740.47 );
+							rute.add(infospotrute7);
+infospotrute7.addEventListener('click', function(){
+viewer.setPanorama( lapangan1 );
+});
 viewer.add( rute );
 var rkp = new PANOLENS.ImagePanorama( "panoramas/rkp.jpg" );
 						rkp.addEventListener('progress', function(e){
@@ -428,6 +440,12 @@
 							rkp.add(infospotrkp0);
 infospotrkp0.addEventListener('click', function(){
 viewer.setPanorama( p );
+});
+var infospotrkp1 = new PANOLENS.Infospot( 512, hotspotIcons[7].data, true );
+							infospotrkp1.position.set( 3540.19, -969.61, -3381.59 );
+							rkp.add(infospotrkp1);
+infospotrkp1.addEventListener('click', function(){
+viewer.setPanorama( dsa );
 });
 viewer.add( rkp );
 var wrpl = new PANOLENS.ImagePanorama( "panoramas/wrpl.jpg" );
@@ -480,6 +498,12 @@
 infospotrtu0.addEventListener('click', function(){
 viewer.setPanorama( rute );
 });
+var infospotrtu1 = new PANOLENS.Infospot( 512, hotspotIcons[9].data, true );
+							infospotrtu1.position.set( 4767.99, -1190.94, -889.94 );
+							rtu.add(infospotrtu1);
+infospotrtu1.addEventListener('click', function(){
+viewer.setPanorama( rg );
+});
 viewer.add( rtu );
 var wtkj = new PANOLENS.ImagePanorama( "panoramas/wtkj.jpg" );
 						wtkj.addEventListener('progress', function(e){
@@ -491,6 +515,12 @@
 						wtkj.addEventListener('click', function(e){
 						});
 
+var infospotwtkj0 = new PANOLENS.Infospot( 512, hotspotIcons[7].data, true );
+							infospotwtkj0.position.set( -4979.25, 171.66, 267.24 );
+							wtkj.add(infospotwtkj0);
+infospotwtkj0.addEventListener('click', function(){
+viewer.setPanorama( rute );
+});
 viewer.add( wtkj );
 var wtfl = new PANOLENS.ImagePanorama( "panoramas/wtfl.jpg" );
 						wtfl.addEventListener('progress', function(e){
@@ -502,6 +532,12 @@
 						wtfl.addEventListener('click', function(e){
 						});
 
+var infospotwtfl0 = new PANOLENS.Infospot( 512, hotspotIcons[7].data, true );
+							infospotwtfl0.position.set( -4970.64, -284.41, 347.02 );
+							wtfl.add(infospotwtfl0);
+infospotwtfl0.addEventListener('click', function(){
+viewer.setPanorama( rute );
+});
 viewer.add( wtfl );
 var wtkr = new PANOLENS.ImagePanorama( "panoramas/wtkr.jpg" );
 						wtkr.addEventListener('progress', function(e){
@@ -513,8 +549,83 @@
 						wtkr.addEventListener('click', function(e){
 						});
 
+var infospotwtkr0 = new PANOLENS.Infospot( 512, hotspotIcons[7].data, true );
+							infospotwtkr0.position.set( -4864.56, 1051.43, 387.71 );
+							wtkr.add(infospotwtkr0);
+infospotwtkr0.addEventListener('click', function(){
+viewer.setPanorama( rute );
+});
 viewer.add( wtkr );
-$(document).ready(function(){ viewer.setPanorama( rute ); });
+var lapangan1 = new PANOLENS.ImagePanorama( "panoramas/lapangan1.jpg" );
+						lapangan1.addEventListener('progress', function(e){
+							$("#loading").show();
+						});
+						lapangan1.addEventListener('load', function(e){
+							$("#loading").fadeOut();
+						});
+						lapangan1.addEventListener('click', function(e){
+						});
+
+var infospotlapangan10 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotlapangan10.position.set( 4714.17, -423.20, -1599.05 );
+							lapangan1.add(infospotlapangan10);
+infospotlapangan10.addEventListener('click', function(){
+showMedia(1, 'images/bendera.jpg');
+});
+var infospotlapangan11 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotlapangan11.position.set( -4601.98, -1927.36, -209.62 );
+							lapangan1.add(infospotlapangan11);
+infospotlapangan11.addEventListener('click', function(){
+viewer.setPanorama( lapangan2 );
+});
+viewer.add( lapangan1 );
+var lapangan2 = new PANOLENS.ImagePanorama( "panoramas/lapangan2.jpg" );
+						lapangan2.addEventListener('progress', function(e){
+							$("#loading").show();
+						});
+						lapangan2.addEventListener('load', function(e){
+							$("#loading").fadeOut();
+						});
+						lapangan2.addEventListener('click', function(e){
+						});
+
+var infospotlapangan20 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotlapangan20.position.set( 138.47, 33.44, -4991.43 );
+							lapangan2.add(infospotlapangan20);
+infospotlapangan20.addEventListener('click', function(){
+showMedia(1, 'images/logo.jpg');
+});
+var infospotlapangan21 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotlapangan21.position.set( 3486.60, 819.31, 3477.41 );
+							lapangan2.add(infospotlapangan21);
+infospotlapangan21.addEventListener('click', function(){
+showMedia(1, 'images/mylove.jpg');
+});
+viewer.add( lapangan2 );
+var dsa = new PANOLENS.ImagePanorama( "panoramas/dsa.jpg" );
+						dsa.addEventListener('progress', function(e){
+							$("#loading").show();
+						});
+						dsa.addEventListener('load', function(e){
+							$("#loading").fadeOut();
+						});
+						dsa.addEventListener('click', function(e){
+						});
+
+var infospotdsa0 = new PANOLENS.Infospot( 512, hotspotIcons[0].data, true );
+							infospotdsa0.position.set( 4117.47, -91.24, 2820.89 );
+							dsa.add(infospotdsa0);
+infospotdsa0.addEventListener('click', function(){
+showMedia(1, 'images/res.jpg');
+});
+var infospotdsa1 = new PANOLENS.Infospot( 512, hotspotIcons[9].data, true );
+							infospotdsa1.position.set( -2465.18, -1175.78, -4185.37 );
+							dsa.add(infospotdsa1);
+infospotdsa1.addEventListener('click', function(){
+viewer.setPanorama( rtu );
+});
+viewer.add( dsa );
+$(document).ready(function(){ viewer.setPanorama( a ); });
 
 /*panoramas-end*/
             
